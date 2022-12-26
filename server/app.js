@@ -7,7 +7,7 @@ const cookieParser = require("cookie-parser");
 const cors = require("cors");
 const path = require("path");
 
-// Import Router
+// Import Routers
 const authRouter = require("./routes/auth");
 const categoryRouter = require("./routes/categories");
 const productRouter = require("./routes/products");
