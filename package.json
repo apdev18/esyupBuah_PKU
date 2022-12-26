@@ -1,0 +1,32 @@
+{
+  "name": "apdevx",
+  "version": "1.0.0",
+  "description": "A E-commerce website.",
+  "main": "app.js",
+  "scripts": {
+    "build": "cd server && npm i -D && cd client && npm i -D && npm i -g serve && serve -s build",
+    "start": "cd server && node app.js",
+    "dev": "cd server && nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "Apdevx",
+  "license": "ISC",
+  "devDependencies": {
+    "bcryptjs": "^2.4.3",
+    "braintree": "^3.0.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "i": "^0.3.6",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^5.9.27",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.4",
+    "npm": "^9.2.0"
+  }
+}
